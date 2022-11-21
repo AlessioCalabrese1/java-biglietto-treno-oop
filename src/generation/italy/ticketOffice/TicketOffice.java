@@ -9,11 +9,14 @@ public class TicketOffice {
         int km = sn.nextInt();
         System.out.println("Inserire l'età:");
         int age = sn.nextInt();
+        System.out.println("Vuole il biglietto flessibile? (true/false)");
+        boolean isFlexible = sn.nextBoolean();
         try {
-            Ticket ticket = new Ticket(km, age);
+            Ticket ticket = new Ticket(km, age, isFlexible);
             System.out.println(ticket);
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
+        sn.close();
     }
 }
