@@ -61,6 +61,10 @@ public class Ticket {
         this.date = date;
     }
 
+
+    // Lancio di una eccezione, nella funzione si specifica throws seguito da tutte le possibili eccezioni al suo interno
+    // (queste si propagano a tutte le funzioni che richiamano la funzione di partenza), 
+    // con la dicitura throw new Exception(); lanciamo una nuova eccezione che può essere di vari tipi (Exception è il più generico)
     public boolean isValidKm(int km) throws Exception{
         if (km < 1) {
             throw new Exception("Il valore KM inserito NON è valido!");
