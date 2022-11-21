@@ -109,6 +109,6 @@ public class Ticket {
     @Override
     public String toString() {
         return "KM: " + km +"\nAGE: " + age + "\nTICKET COST: " + 
-        calculatePrice(km, age, flexible) + "\nEXPIRATION DATE: " + calculateDueDate(flexible, km, age);
+        calculatePrice(km, age, flexible) + "\nEXPIRATION DATE: " + calculateDueDate(flexible, km, age) + "\n";
     }
 }
